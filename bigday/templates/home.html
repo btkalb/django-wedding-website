@@ -15,7 +15,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Cory and Rowena's Big Day</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Brian and Michelle</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -24,13 +24,16 @@
                         <a class="page-scroll" href="#main-header">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#event">Event</a>
+                        <a class="page-scroll" href="#event">Events</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#niagara">Niagara-on-the-Lake</a>
+                        <a class="page-scroll" href="#charlottesville">Charlottesville</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#other-stuff">Everything Else</a>
+                        <a class="page-scroll" href="#hotels">Hotels</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#story">Our Story</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -45,10 +48,9 @@
     <header id="main-header">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>We did it!!</h1>
                 {% comment %}
                 <hr>
-                <h2>It's wedding week!</h2>
+                <h2>Wedding</h2>
                 <a href="#welcome" class="btn btn-info btn-xl page-scroll">Welcome</a>
                 <a href="#event" class="btn btn-primary btn-xl page-scroll">Friday</a>
                 <a href="#saturday-event" class="btn btn-success btn-xl page-scroll">Saturday</a>
@@ -63,21 +65,19 @@
                     <h2 class="section-heading">Welcome!</h2>
                     <hr>
                     <p>
-                        Hello friends and family! It's the week of the wedding!
+                        Hello Friends and Family!
                     </p>
                     <p>
-                        If you're looking for information about the event, look no further!
-                        Please see below for all the details regarding <a href="#event" class="page-scroll">Friday night's welcome party</a> and <a href="#saturday-event" class="page-scroll">Saturday's event</a>.
+                        Please see below for all the details regarding <a href="#hotels" class="page-scroll">accommodations</a>, <a href="#event" class="page-scroll">Friday Night's Welcome Party</a> in Charlottesville and <a href="#saturday-event" class="page-scroll">Saturday's Ceremony & Reception</a> at Castle Hill Cider.
                     </p>
-                    <p>
-                        To get added to the wedding whatsapp group first create an account and then send an
-                        email to <a href="mailto:whatsapp@coryandro.com">whatsapp@coryandro.com</a>.
-                        Also, the current front-runner for the wedding hashtag (if you're into that sort of thing) is #getlukky.
-                    </p>
+                    <!-- <p>
+                        To get added to the wedding WhatsApp group first create an account and then send an
+                        email to <a href="mailto:whatsapp@brianandmichelle.com">whatsapp@brianandmichelle.com</a>.
+                    </p> -->
                     <p>
                         Looking forward to seeing everyone soon!
                     </p>
-                    <p class="pull-right">- Cory and Rowena</p>
+                    <p class="pull-right">- Brian and Michelle</p>
                 </div>
             </div>
         </div>
@@ -86,24 +86,24 @@
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#event" class="portfolio-box page-scroll">
-                        <img src="{% static 'bigday/images/ravine-nav.jpg' %}" class="img-responsive" alt="">
+                    <a href="#saturday-event" class="portfolio-box page-scroll">
+                        <img src="{% static 'bigday/images/castlehill.jpg' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    The Event
+                                    Castle Hill Cider
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#niagara" class="portfolio-box page-scroll">
-                        <img src="{% static 'bigday/images/prince-of-wales-hotel-nav.jpg' %}" class="img-responsive" alt="">
+                    <a href="#charlottesville" class="portfolio-box page-scroll">
+                        <img src="{% static 'bigday/images/monticello.jpg' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    Niagara-on-the-Lake
+                                    Charlottesville
                                 </div>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#story" class="portfolio-box page-scroll">
-                        <img src="{% static 'bigday/images/twelve-apostles-nav.jpg' %}" class="img-responsive" alt="">
+                        <img src="{% static 'bigday/images/ourstory.jpg' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
@@ -125,24 +125,24 @@
         </div>
     </section>
     {% include 'partials/event.html' %}
-    <section id="niagara">
-        {% include 'partials/niagara.html' %}
+    <section id="charlottesville" class="bg-info"
+        {% include 'partials/charlottesville.html' %}
     </section>
 {% comment %}
         {% include 'partials/wedding-party.html' %}
 {% endcomment %}
-    <section id="other-stuff" class="bg-primary">
-        {% include 'partials/misc.html' %}
+    <section id="hotels" class="bg-primary">
+        {% include 'partials/hotels.html' %}
     </section>
+{% comment %}
     <section id="gifts">
         {% include 'partials/gifts.html' %}
     </section>
+{% endcomment %}
     <section id="story" class="bg-dark">
         {% include 'partials/story.html' %}
     </section>
-    {% include 'partials/proposal.html' %}
-    {% include 'partials/save-the-dates.html' %}
-    <section id="contact" class="bg-dark">
+    <section id="contact" class="bg-info">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -152,7 +152,7 @@
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:hello@coryandro.com">hello@coryandro.com</a></p>
+                    <p><a href="mailto:hello@brianandmichelle.com">hello@brianandmichelle.com</a></p>
                 </div>
             </div>
         </div>
