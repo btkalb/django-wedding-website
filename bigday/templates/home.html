@@ -15,7 +15,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Brian and Michelle</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Brian and Michelle April 2018</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -26,14 +26,16 @@
                     <li>
                         <a class="page-scroll" href="#event">Events</a>
                     </li>
+                    {% comment %}
                     <li>
                         <a class="page-scroll" href="#charlottesville">Charlottesville</a>
                     </li>
+                    {% endcomment %}
                     <li>
                         <a class="page-scroll" href="#hotels">Hotels</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#story">Our Story</a>
+                        <a class="page-scroll" href="#photos">Photos</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -98,24 +100,24 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#charlottesville" class="portfolio-box page-scroll">
+                    <a href="#hotels" class="portfolio-box page-scroll">
                         <img src="{% static 'bigday/images/monticello.jpg' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    Charlottesville
+                                    Hotels
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#story" class="portfolio-box page-scroll">
+                    <a href="#photos" class="portfolio-box page-scroll">
                         <img src="{% static 'bigday/images/ourstory.jpg' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    Our Story
+                                    Photos
                                 </div>
                             </div>
                         </div>
@@ -125,10 +127,10 @@
         </div>
     </section>
     {% include 'partials/event.html' %}
+{% comment %}
     <section id="charlottesville" class="bg-info"
         {% include 'partials/charlottesville.html' %}
     </section>
-{% comment %}
         {% include 'partials/wedding-party.html' %}
 {% endcomment %}
     <section id="hotels" class="bg-primary">
@@ -139,20 +141,20 @@
         {% include 'partials/gifts.html' %}
     </section>
 {% endcomment %}
-    <section id="story" class="bg-dark">
-        {% include 'partials/story.html' %}
+    <section id="photos" class="bg-dark">
+        {% include 'partials/photos.html' %}
     </section>
     <section id="contact" class="bg-info">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Contact us!</h2>
+                    <h2 class="section-heading">Contact Us!</h2>
                     <hr class="primary">
                     <p>If you have any questions don't hesitate to reach out!</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:hello@brianandmichelle.com">hello@brianandmichelle.com</a></p>
+                    <p><a href="mailto:info@brianmichelle.com">info@brianmichelle.com</a></p>
                 </div>
             </div>
         </div>
