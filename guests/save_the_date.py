@@ -103,10 +103,10 @@ def get_save_the_date_context(template_id):
         template_id = 'lions-head'
     context = copy(SAVE_THE_DATE_CONTEXT_MAP[template_id])
     context['name'] = template_id
-    context['page_title'] = 'Cory and Rowena - Save the Date!'
+    context['page_title'] = 'Brian and Michelle - Save the Date!'
     context['preheader_text'] = (
         "The date that you've eagerly been waiting for is finally here. "
-        "Cory and Ro are getting married! Save the date!"
+        "Brian and Michelle are getting married! Save the date!"
     )
     return context
 
@@ -114,11 +114,11 @@ def get_save_the_date_context(template_id):
 def send_save_the_date_email(context, recipients, test_only=False):
     context['email_mode'] = True
     template_html = render_to_string(SAVE_THE_DATE_TEMPLATE, context=context)
-    template_text = "Save the date for Cory and Rowena's wedding! July 2, 2016. Niagata-on-the-Lake, Ontario, Canada"
+    template_text = "Save the date for Brian and Michelle's wedding! April 28, 2018. Charlottesville, Virginia"
     subject = 'Save the Date!'
     # https://www.vlent.nl/weblog/2014/01/15/sending-emails-with-embedded-images-in-django/
-    msg = EmailMultiAlternatives(subject, template_text, 'Cory and Rowena <hello@coryandro.com>', recipients,
-                                 reply_to=['rsvp@coryandro.com'])
+    msg = EmailMultiAlternatives(subject, template_text, 'Brian and Michelle <info@brianmichelle.com>', recipients,
+                                 reply_to=['rsvp@brianmichelle.com'])
     msg.attach_alternative(template_html, "text/html")
     msg.mixed_subtype = 'related'
     for filename in (context['header_filename'], context['main_image']):

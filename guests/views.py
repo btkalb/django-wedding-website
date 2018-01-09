@@ -124,7 +124,7 @@ def invitation_email_preview(request, invite_id):
 @login_required
 def invitation_email_test(request, invite_id):
     party = guess_party_by_invite_id_or_404(invite_id)
-    send_invitation_email(party, recipients=['cory.zue@gmail.com'])
+    send_invitation_email(party, recipients=['btkalb@gmail.com'])
     return HttpResponse('sent!')
 
 
@@ -142,8 +142,7 @@ def save_the_date_preview(request, template_id):
 @login_required
 def test_email(request, template_id):
     context = get_save_the_date_context(template_id)
-    send_save_the_date_email(context, ['cory.zue@gmail.com'])
-    # send_save_the_date_email(context, ['cory.zue@gmail.com', 'rowenaluk@gmail.com'])
+    send_save_the_date_email(context, ['btkalb@gmail.com'])
     return HttpResponse('sent!')
 
 
