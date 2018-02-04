@@ -58,6 +58,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join('bigday', 'templates'),
+            os.path.join('templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {

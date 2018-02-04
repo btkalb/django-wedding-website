@@ -197,12 +197,13 @@ header {
 }
 
 #main-header {
-    background-image: url('../images/home-page.jpg');
+    background-image: url('../images/gallery/arizona.jpg');
 }
 
 header .header-content {
     position: relative;
     width: 100%;
+    min-height: 500px;
     padding: 100px 15px;
     text-align: center;
 }
@@ -231,6 +232,11 @@ header .header-content .header-content-inner p {
 }
 
 @media(min-width:768px) {
+
+    #main-header {
+        background-image: url('../images/home-page.jpg');
+    }
+
     header {
         min-height: 100%;
     }
