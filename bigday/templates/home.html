@@ -26,11 +26,6 @@
                     <li>
                         <a class="page-scroll" href="#event">Events</a>
                     </li>
-                    {% comment %}
-                    <li>
-                        <a class="page-scroll" href="#charlottesville">Charlottesville</a>
-                    </li>
-                    {% endcomment %}
                     <li>
                         <a class="page-scroll" href="#hotels">Hotels</a>
                     </li>
@@ -39,6 +34,9 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#registry">Registry</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#charlottesville">Charlottesville</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#photos">Photos</a>
@@ -133,10 +131,10 @@
         </div>
     </section>
     {% include 'partials/event.html' %}
-{% comment %}
     <section id="charlottesville" class="bg-info"
         {% include 'partials/charlottesville.html' %}
     </section>
+{% comment %}
         {% include 'partials/wedding-party.html' %}
 {% endcomment %}
     <section id="hotels" class="bg-primary">
